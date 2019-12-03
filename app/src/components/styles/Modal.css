@@ -1,0 +1,98 @@
+:root {
+    --modal-display: flex;
+}
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    /* z-index: 100; */
+    overflow: auto;
+}
+
+.modal-content-container {
+    margin: 5% auto;
+    background: #FFF;
+    position: relative;
+    width: 90%;
+}
+.modal-position {
+    display: var(--modal-display);
+    align-items: center;
+}
+.modal-opened {
+    overflow-y: hidden;
+}
+#root.ios-device {
+    display: none;
+}
+.modal-close-icon > svg {
+    width: 1.8em;
+    height: 1.8em;
+    position: absolute;
+    top: 8px;
+    right: 8px; 
+    z-index: 100;
+    cursor: pointer;
+}
+.modal-content-container.active {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    animation: ModalFadeIn 0.2s cubic-bezier(.11,.57,.87,.71) forwards;
+}
+.modal-content-container.hide {
+    animation: ModalFadeOut 0.1s cubic-bezier(.11,.57,.87,.71) forwards;
+}
+@media (max-width: 468px) {
+    .modal-overlay::-webkit-scrollbar {
+        background: white;
+    }
+    div.modal-overlay div.modal-content-container {
+        width: 100%;
+    }
+    .modal-content-container {
+        margin: 0;
+        min-height: 100%;
+    }
+    .modal-close-icon > svg {
+        right: 0; 
+    }
+    .modal-content-container > *:nth-child(2):not(.item-quantity-header) {
+        width: calc(90% - 20px);
+        margin: 0 auto;
+    }
+}
+@media (min-width: 469px) {
+    .modal-overlay::-webkit-scrollbar-thumb {
+        background: rgba(160, 160, 160, 0.6);
+    }
+    .modal-content-container {
+        border-radius: 16px;
+    }
+}
+@keyframes ModalFadeIn {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 50px, 0);
+    }
+    90% {
+        opacity: 0.9;
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+@keyframes ModalFadeOut {
+    from {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+    to {
+        opacity: 0;
+        transform: translate3d(0, 50px, 0);
+    }
+}

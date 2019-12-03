@@ -5,6 +5,9 @@ import './styles/Header.css';
 import logo from '../assets/images/logo.svg';
 import uploadIcon from '../assets/images/upload_icon.svg';
 
+// importing components
+import Modal from './Modal';
+
 class Header extends React.Component {
     render() {
         console.log('Header')

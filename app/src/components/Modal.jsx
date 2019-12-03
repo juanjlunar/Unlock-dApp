@@ -3,9 +3,9 @@ import ReactDOM from 'react-dom';
 // importing components
 import { ReactComponent as Close } from '../assets/images/cancel.svg';
 // importing utils
-import { setRef } from '../utils/functions';
+import { setRef } from '../utils/generalFunctions';
 // importing styles 
-import './css/Modal.css';
+import './styles/Modal.css';
 
 const isIos = /iP(hone|od|ad)/i.test(window.navigator.platform);
 

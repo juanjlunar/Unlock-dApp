@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 195 195">
+  <defs>
+    <filter  x="0" y="0" width="195" height="195" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="7.5" result="blur"/>
+      <feFlood flood-opacity="0.349"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g  data-name="Cancel Fondo Blanco2" transform="translate(-1666.5 -843.216)">
+    <g transform="matrix(1, 0, 0, 1, 1666.5, 843.22)" filter="url(#Trazado_974)">
+      <path  data-name="Trazado 974" d="M75,0A75,75,0,1,1,0,75,75,75,0,0,1,75,0Z" transform="translate(22.5 22.5)" fill="#fff"/>
+    </g>
+    <path  data-name="Unión 42" d="M42.426,45.962,3.535,84.853,0,81.317,38.891,42.426,0,3.535,3.535,0,42.426,38.891,81.317,0l3.536,3.535L45.961,42.427,84.852,81.318l-3.535,3.535Z" transform="translate(1722 898.716)" fill="#636363"/>
+  </g>
+</svg>
