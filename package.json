@@ -1,0 +1,26 @@
+{
+  "name": "Unlock-dApp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "solidity-coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juanjlunar/Unlock-dApp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juanjlunar/Unlock-dApp/issues"
+  },
+  "homepage": "https://github.com/juanjlunar/Unlock-dApp#readme",
+  "dependencies": {
+    "solidity-coverage": "^0.6.7"
+  }
+}
