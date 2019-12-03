@@ -5,7 +5,7 @@ import { createPromise } from 'redux-promise-middleware';
 import reduxImmutableStateInvariant from 'redux-immutable-state-invariant';
 
 // reducers
-
+import web3Reducer from './web3Reducer';
 
 
 
@@ -29,7 +29,7 @@ export function configureStore() {
 // reducers
 function rootReducer() {
 	return combineReducers({
-
+		web3Reducer
 	});
 }
 

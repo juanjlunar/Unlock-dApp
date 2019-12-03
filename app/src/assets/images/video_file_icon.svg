@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="29" viewBox="0 0 30 29">
+  <g id="Grupo_18" data-name="Grupo 18" transform="translate(213 -214)">
+    <g id="Rectángulo_14" data-name="Rectángulo 14" transform="translate(-213 214)" fill="none" stroke="#e33d38" stroke-width="2">
+      <rect width="30" height="29" rx="5" stroke="none"/>
+      <rect x="1" y="1" width="28" height="27" rx="4" fill="none"/>
+    </g>
+    <path id="Polígono_1" data-name="Polígono 1" d="M5.122,1.609a1,1,0,0,1,1.756,0l4.315,7.912A1,1,0,0,1,10.315,11H1.685A1,1,0,0,1,.807,9.521Z" transform="translate(-191.5 222.5) rotate(90)" fill="#e33d38"/>
+  </g>
+</svg>
