@@ -1,0 +1,33 @@
+.file-input-container {
+    position: relative;
+    padding: 0.6em 0;
+    overflow: hidden;
+}
+.file-input-container p {
+    flex: 1;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #FFF;
+    font-size: 0.8em;
+    font-weight: 700;
+    padding-left: 10px;
+    text-transform: uppercase;
+}
+.file-input-container label {
+    padding: 0.6em 1.2em;
+    background: rgba(255,255,255, 0.35);
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9em;
+    color: #FFF;
+    font-family: MonLight;
+    font-weight: 900;
+}
+.file-input-container input {
+    visibility: hidden;
+    width: 0px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}

@@ -1,0 +1,13 @@
+.upload-file-form-container {
+    background: var(--black);
+    max-width: 700px;
+    font-size: 1em;
+}
+.upload-file-content-container > h2 {
+    color: #FFF;
+    font-size: 1.1em;
+    padding-bottom: 1em;
+}
+.upload-file-content-container {
+    padding: 2em 0;
+}

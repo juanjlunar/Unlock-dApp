@@ -1,5 +1,6 @@
 import { actions } from './web3Actions';
 import FileShareContract from '../contracts/FileShare.json';
+import ipfs from 'ipfs';
 
 const initialState = {
     mainAccount: '',
@@ -28,7 +29,6 @@ function web3Reducer(state = initialState, action = null) {
                 isEmpty: action.payload.length === 0
             }
        case actions.STORE_MAIN_ACCOUNT + '_ERROR':
-           console.log('ASDASSADASDASDASDASDASDASDASD', action.payload)
             return {
                 ...state,
                 isLoading: false,
@@ -45,9 +45,13 @@ function web3Reducer(state = initialState, action = null) {
                 FileShareContract.abi,
                 FileShareContract.networks[action.payload] && FileShareContract.networks[action.payload].address,
             );
+
             window.__fileShare = Object.freeze({
                 ...contract
             });
+            ipfs.create().then(node => {
+                window.__ipfsNode = Object.freeze(node);
+            })
             return {
                 ...state,
                 areContractActionsLoading: false
