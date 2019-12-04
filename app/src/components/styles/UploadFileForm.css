@@ -3,11 +3,18 @@
     max-width: 700px;
     font-size: 1em;
 }
-.upload-file-content-container > h2 {
+.input-section > h2 {
     color: #FFF;
     font-size: 1.1em;
     padding-bottom: 1em;
 }
 .upload-file-content-container {
     padding: 2em 0;
+}
+.text-input-container > input.goal-input {
+    max-width: 200px;
+}
+.upload-file-button-container {
+    padding-top: 2em;
+    text-align: right;
 }
