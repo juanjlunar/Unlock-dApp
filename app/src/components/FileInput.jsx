@@ -19,7 +19,7 @@ class FileInput extends React.Component {
     }
     onChange({target}) {
         this.setState({
-            file: target.files[0]
+            file: this.props.multipleFiles ? target.files : target.files[0]
         });
     }
     getFileInputRef(el) {

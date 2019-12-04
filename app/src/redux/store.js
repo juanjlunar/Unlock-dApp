@@ -6,6 +6,7 @@ import reduxImmutableStateInvariant from 'redux-immutable-state-invariant';
 
 // reducers
 import web3Reducer from './web3Reducer';
+import ipfsReducer from './ipfsReducer';
 
 
 
@@ -29,7 +30,8 @@ export function configureStore() {
 // reducers
 function rootReducer() {
 	return combineReducers({
-		web3Reducer
+		web3Reducer,
+		ipfsReducer
 	});
 }
 
