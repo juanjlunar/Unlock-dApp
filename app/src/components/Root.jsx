@@ -2,6 +2,7 @@ import React from 'react';
 import Web3 from 'web3';
 import { Switch, Redirect, Route } from "react-router";
 import { BrowserRouter as Router } from "react-router-dom";
+import ipfs from 'ipfs';
 // importing components
 import HomeView from './HomeView';
 import HeaderContainer from '../containers/HeaderContainer';
@@ -24,12 +25,14 @@ class Root extends React.Component {
             window.web3 = new Web3(window.ethereum);
             this.setMainAccount(window.ethereum.enable());
             window.ethereum.on('accountsChanged', this.props.changeMainAccount);
-            this.props.getContractActions(window.web3.eth.net.getId());
+            this.props.storeContractInWindowObject(window.web3.eth.net.getId());
+            this.props.createStoreIpfsNode(ipfs.create());
             return;
         }
         window.web3 = new Web3(window.web3.currentProvider);
-        this.props.getContractActions(window.web3.eth.net.getId());
+        this.props.storeContractInWindowObject(window.web3.eth.net.getId());
         this.props.changeMainAccount(window.web3.eth.accounts[0]);
+        this.props.createStoreIpfsNode(ipfs.create());
     }
 	setMainAccount(accountsPromise) {
 		this.props.storeMainAccount(accountsPromise);

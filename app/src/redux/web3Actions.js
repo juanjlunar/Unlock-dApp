@@ -22,7 +22,7 @@ export function showMetamaskInstallMessage() {
         type: actions.SHOW_METAMAST_INSTALL_MESSAGE
     };
 }
-export function getContractActions(contractPromise) {
+export function storeContractInWindowObject(contractPromise) {
     return {
         type: actions.GET_CONTRACT_ACTIONS,
         payload: contractPromise
