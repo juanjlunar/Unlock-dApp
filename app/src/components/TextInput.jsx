@@ -17,6 +17,7 @@ class TextInput extends React.Component {
     getFileInputRef(el) {
         if (el) {
             this.inputRef = el;
+            this.inputRef.value = this.props.initialValue || '';
         }
     }
     focusInput() {

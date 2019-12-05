@@ -2,11 +2,13 @@ import React from 'react';
 // importing styles
 import './styles/UploadFileForm.css';
 // importing utils
-// import { setRef } from '../utils/generalFunctions';
-import FileInput from './FileInput';
-import TextInput from './TextInput';
+import { getInputProps, getInputError } from '../input-props/UploadFileForm';
+//importing components
+import Modal from './Modal';
+
 
 class UploadFileForm extends React.Component {
+    
     constructor() {
         super();
         this.getFile = this.getFile.bind(this);
@@ -14,13 +16,21 @@ class UploadFileForm extends React.Component {
         this.getFileDescription = this.getFileDescription.bind(this);
         this.getFileGoal = this.getFileGoal.bind(this);
         this.uploadSubmit = this.uploadSubmit.bind(this);
+        this.closeModalErrors = this.closeModalErrors.bind(this);
+        this.getInputProps = getInputProps.bind(this);
         this.uploadInfo = {};
+        this.getInputProps().forEach(inputProp => this.uploadInfo[inputProp.id] = inputProp.value);
+        this.errors = [];
+        this.state = {
+            inputsError: false
+        }
     }
     getFile(file) {
+        console.log(file)
         const fileReader = new FileReader();
         fileReader.readAsArrayBuffer(file);
         fileReader.onload = () => {
-            this.uploadInfo.fileBuffer = Buffer.from(fileReader.result);
+            this.uploadInfo.file = fileReader.result;
         }
     }
     getFileName({target}) {
@@ -33,47 +43,68 @@ class UploadFileForm extends React.Component {
         const newValue = target.value.replace(/[^0-9]/g, '');
         this.uploadInfo.fileGoal = newValue
         target.value = newValue;
-        console.log(this.uploadInfo)
     }
     uploadSubmit(e) {
-        console.log(e)
+        e.preventDefault();
+        Object.keys(this.uploadInfo).forEach(key => {
+            if (!this.uploadInfo[key]) this.errors.push(key);
+        });
+        if (this.errors.length > 0) {
+            this.setState({inputsError: true});
+            return;
+        }
+        this.props.addFileIpfs(this.uploadInfo.file, this.uploadInfo, this.props.mainAccount);
+    }
+    closeModalErrors() {
+        if (this.state.inputsError) 
+            this.setState({inputsError: false}, () => this.errors = []);
+    }
+    renderInputs() {
+        if (this.state.inputsError) {
+            return (
+                <Modal
+                    identifier="uploadFileErrors"
+                    contentClassName="container upload-file-form-container"
+                    closeModal={this.closeModalErrors}
+                >
+                    <div className="input-errors">
+                        {
+                            this.errors.map(key => {
+                                return <p key={key}>{getInputError(key)}</p>;
+                            })
+                        }
+                    </div>
+                </Modal>
+            );
+        }
+        return (
+            <React.Fragment>
+                {
+                    this.getInputProps().map(inputProp => {
+                        return (
+                            <inputProp.input 
+                                key={inputProp.id}
+                                label={inputProp.label}
+                                onChange={inputProp.onChange}
+                                required={inputProp.required}
+                                {...Object.assign({}, inputProp.className ? {className: inputProp.className} : {})}
+                                {...Object.assign({}, inputProp.type ? {type: inputProp.type} : {})}
+                                initialValue={this.uploadInfo[inputProp.id]}
+                            />
+                        )
+                    })
+                }
+                <div className="full-width upload-file-button-container">
+                    <button className="btn" type="submit">UPLOAD</button>
+                </div>
+            </React.Fragment>
+        )
     }
     render() {
+        console.log('UploadFileForm')
         return (
-            <form className="container upload-file-content-container">
-                <div className="full-width input-section">
-                    <h2>Upload new file</h2>
-                    <FileInput 
-                        label="Select file"
-                        onChange={this.getFile}
-                    />
-                </div>
-                <div className="full-width input-section">
-                    <TextInput 
-                        label="Goal"
-                        onChange={this.getFileGoal}
-                        className="goal-input"
-                        required
-                    />
-                </div>
-                <div className="full-width input-section">
-                    <TextInput 
-                        label="Name"
-                        onChange={this.getFileName}
-                        required
-                    />
-                </div>
-                <div className="full-width input-section">
-                    <TextInput 
-                        label="Description"
-                        onChange={this.getFileDescription}
-                        type="textarea"
-                        required
-                    />
-                </div>
-                <div className="full-width upload-file-button-container">
-                    <button onSubmit={this.uploadSubmit} className="btn" type="submit">UPLOAD</button>
-                </div>
+            <form onSubmit={this.uploadSubmit} className="container upload-file-content-container">
+                {this.renderInputs()}
             </form>
         );
     }

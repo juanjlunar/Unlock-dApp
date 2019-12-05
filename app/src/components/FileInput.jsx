@@ -3,14 +3,20 @@ import React from 'react';
 import './styles/FileInput.css';
 
 class FileInput extends React.Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.onChange = this.onChange.bind(this);
         this.getFileInputRef = this.getFileInputRef.bind(this);
         this.focusInput = this.focusInput.bind(this);
         this.state = {
             file: ''
         };
+    }
+    shouldComponentUpdate(nextProps, nextState) {
+        if (nextState.file !== this.state.file) {
+            return true;
+        }
+        return false;
     }
     componentDidUpdate(prevProps, prevState) {
         if (prevState.file !== this.state.file && typeof this.props.onChange === 'function') {
@@ -31,6 +37,7 @@ class FileInput extends React.Component {
         this.inputRef.click();
     }
     render() {
+        console.log('FileInput')
         return (
             <div className="file-input-container flex-r-y-centered">
                 <label onClick={this.focusInput}>{this.props.label || 'Choose file'}</label>

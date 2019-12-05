@@ -6,10 +6,10 @@ import Root from '../components/Root';
 import { 
     storeMainAccount, 
     changeMainAccount, 
-    showMetamaskInstallMessage, 
-    storeContractInWindowObject
+    showMetamaskInstallMessage
  } from '../redux/web3Actions';
  import { createStoreIpfsNode } from '../redux/ipfsActions';
+ import { storeContractInWindowObject } from '../redux/contractActions';
 
 
 export default connect(

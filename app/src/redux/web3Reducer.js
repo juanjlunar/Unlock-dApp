@@ -1,5 +1,4 @@
 import { actions } from './web3Actions';
-import FileShareContract from '../contracts/FileShare.json';
 
 const initialState = {
     mainAccount: '',
@@ -7,7 +6,6 @@ const initialState = {
     error: false,
     isEmpty: false,
     metamaskInstall: false,
-    contractActionsError: false
 };
 
 
@@ -32,29 +30,6 @@ function web3Reducer(state = initialState, action = null) {
                 ...state,
                 isLoading: false,
                 error: action.payload.message
-            }
-       case actions.GET_CONTRACT_ACTIONS + '_START':
-            return {
-                ...state,
-                areContractActionsLoading: true,
-                contractActionsError: false
-            }
-       case actions.GET_CONTRACT_ACTIONS + '_SUCCESS':
-           const contract = new window.web3.eth.Contract(
-                FileShareContract.abi,
-                FileShareContract.networks[action.payload] && FileShareContract.networks[action.payload].address,
-            );
-
-            window.__fileShare = Object.freeze(contract);
-            return {
-                ...state,
-                areContractActionsLoading: false
-            }
-       case actions.GET_CONTRACT_ACTIONS + '_ERROR':
-            return {
-                ...state,
-                areContractActionsLoading: false,
-                contractActionsError: true
             }
         case actions.CHANGE_MAIN_ACCOUNT:
             return {

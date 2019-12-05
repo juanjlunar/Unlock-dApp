@@ -7,7 +7,7 @@ import uploadIcon from '../assets/images/upload_icon.svg';
 
 // importing components
 import Modal from './Modal';
-import UploadFileForm from './UploadFileForm';
+import UploadFileFormContainer from '../containers/UploadFileFormContainer';
 
 class Header extends React.Component {
     constructor() {
@@ -34,7 +34,7 @@ class Header extends React.Component {
                     contentClassName="container upload-file-form-container"
                     closeModal={this.closeModal}
                 >
-                    <UploadFileForm />
+                    <UploadFileFormContainer />
                 </Modal>
             );
         }

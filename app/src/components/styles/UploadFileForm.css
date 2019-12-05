@@ -18,3 +18,7 @@
     padding-top: 2em;
     text-align: right;
 }
+.input-errors {
+    color: #FFF;
+    padding: 2em;
+}
