@@ -5,6 +5,7 @@ import './styles/UploadFileForm.css';
 import { getInputProps, getInputError } from '../input-props/UploadFileForm';
 //importing components
 import Modal from './Modal';
+import { toWei } from '../utils/generalFunctions';
 
 
 class UploadFileForm extends React.Component {
@@ -26,11 +27,14 @@ class UploadFileForm extends React.Component {
         }
     }
     getFile(file) {
-        console.log(file)
-        const fileReader = new FileReader();
-        fileReader.readAsArrayBuffer(file);
-        fileReader.onload = () => {
-            this.uploadInfo.file = fileReader.result;
+        if (file) {
+            this.uploadInfo.fileType = file.type;
+            this.uploadInfo.fileSize = file.size;
+            const fileReader = new FileReader();
+            fileReader.readAsArrayBuffer(file);
+            fileReader.onload = () => {
+                this.uploadInfo.file = fileReader.result;
+            }
         }
     }
     getFileName({target}) {
@@ -40,8 +44,8 @@ class UploadFileForm extends React.Component {
         this.uploadInfo.fileDescription = target.value.trim();
     }
     getFileGoal({target}) {
-        const newValue = target.value.replace(/[^0-9]/g, '');
-        this.uploadInfo.fileGoal = newValue
+        const newValue = target.value.replace(/[^0-9\.]/g, '');
+        this.uploadInfo.fileGoal = newValue;
         target.value = newValue;
     }
     uploadSubmit(e) {
@@ -53,7 +57,8 @@ class UploadFileForm extends React.Component {
             this.setState({inputsError: true});
             return;
         }
-        this.props.addFileIpfs(this.uploadInfo.file, this.uploadInfo, this.props.mainAccount);
+        this.props.addFileIpfs(this.uploadInfo.file, this.uploadInfo, this.props.mainAccount)
+            .then(() => window.__mountedModals.uploadFile());
     }
     closeModalErrors() {
         if (this.state.inputsError) 
@@ -97,6 +102,14 @@ class UploadFileForm extends React.Component {
                 <div className="full-width upload-file-button-container">
                     <button className="btn" type="submit">UPLOAD</button>
                 </div>
+                {
+                    this.props.ipfsError && 
+                        (
+                            <div className="full-width ipfs-error-container">
+                                <p>{this.props.ipfsError}</p>
+                            </div>
+                        )
+                }
             </React.Fragment>
         )
     }

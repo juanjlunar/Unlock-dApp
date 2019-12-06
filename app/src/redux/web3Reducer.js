@@ -1,7 +1,7 @@
 import { actions } from './web3Actions';
 
 const initialState = {
-    mainAccount: '',
+    mainAccount: false,
     isLoading: false,
     error: false,
     isEmpty: false,
@@ -26,6 +26,7 @@ function web3Reducer(state = initialState, action = null) {
                 isEmpty: action.payload.length === 0
             }
        case actions.STORE_MAIN_ACCOUNT + '_ERROR':
+           console.log('ASDASDASDASD')
             return {
                 ...state,
                 isLoading: false,

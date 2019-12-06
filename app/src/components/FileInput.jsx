@@ -41,7 +41,7 @@ class FileInput extends React.Component {
         return (
             <div className="file-input-container flex-r-y-centered">
                 <label onClick={this.focusInput}>{this.props.label || 'Choose file'}</label>
-                {this.state.file !== '' && <p>{this.state.file.name}</p>}
+                {this.state.file && <p>{this.state.file.name}</p>}
                 <input ref={this.getFileInputRef} onChange={this.onChange} type="file" />
             </div>
         );

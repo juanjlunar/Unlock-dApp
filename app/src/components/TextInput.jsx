@@ -10,7 +10,7 @@ class TextInput extends React.Component {
         this.focusInput = this.focusInput.bind(this);
     }
     onChange(e) {
-        if (typeof this.props.onChange) {
+        if (typeof this.props.onChange === 'function') {
             this.props.onChange(e);
         }
     }

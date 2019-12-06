@@ -1,5 +1,5 @@
 import moment from 'moment';
 
 export function dateHumanize(date) {
-    return moment.duration(moment(date).diff(new Date())).humanize() + ' ago.'
+    return moment.duration(moment.unix(date).diff(new Date())).humanize() + ' ago.'
 }

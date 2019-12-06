@@ -1,0 +1,3216 @@
+{
+  "contractName": "SafeMath",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "fileName",
+          "type": "string"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "branchId",
+          "type": "uint256"
+        }
+      ],
+      "name": "__AssertPostCoverageSafeMath",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "fileName",
+          "type": "string"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "branchId",
+          "type": "uint256"
+        }
+      ],
+      "name": "__AssertPreCoverageSafeMath",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "fileName",
+          "type": "string"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "branchId",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "locationIdx",
+          "type": "uint256"
+        }
+      ],
+      "name": "__BranchCoverageSafeMath",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "fileName",
+          "type": "string"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "lineNumber",
+          "type": "uint256"
+        }
+      ],
+      "name": "__CoverageSafeMath",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "fileName",
+          "type": "string"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "fnId",
+          "type": "uint256"
+        }
+      ],
+      "name": "__FunctionCoverageSafeMath",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "fileName",
+          "type": "string"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "statementId",
+          "type": "uint256"
+        }
+      ],
+      "name": "__StatementCoverageSafeMath",
+      "type": "event"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.13+commit.5b0b510c\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"string\",\"name\":\"fileName\",\"type\":\"string\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"branchId\",\"type\":\"uint256\"}],\"name\":\"__AssertPostCoverageSafeMath\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"string\",\"name\":\"fileName\",\"type\":\"string\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"branchId\",\"type\":\"uint256\"}],\"name\":\"__AssertPreCoverageSafeMath\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"string\",\"name\":\"fileName\",\"type\":\"string\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"branchId\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"locationIdx\",\"type\":\"uint256\"}],\"name\":\"__BranchCoverageSafeMath\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"string\",\"name\":\"fileName\",\"type\":\"string\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"lineNumber\",\"type\":\"uint256\"}],\"name\":\"__CoverageSafeMath\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"string\",\"name\":\"fileName\",\"type\":\"string\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"fnId\",\"type\":\"uint256\"}],\"name\":\"__FunctionCoverageSafeMath\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"string\",\"name\":\"fileName\",\"type\":\"string\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"statementId\",\"type\":\"uint256\"}],\"name\":\"__StatementCoverageSafeMath\",\"type\":\"event\"}],\"devdoc\":{\"details\":\"Wrappers over Solidity's arithmetic operations with added overflow checks. * Arithmetic operations in Solidity wrap on overflow. This can easily result in bugs, because programmers usually assume that an overflow raises an error, which is the standard behavior in high level programming languages. `SafeMath` restores this intuition by reverting the transaction when an operation overflows. * Using this library instead of the unchecked operations eliminates an entire class of bugs, so it's recommended to use it always.\",\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Volumes/Data/Projects/Unlock-dApp/coverageEnv/contracts/SafeMath.sol\":\"SafeMath\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Volumes/Data/Projects/Unlock-dApp/coverageEnv/contracts/SafeMath.sol\":{\"keccak256\":\"0x4880f71044e7ab0c560226a937e666d70f3572b57a3edc4412becef101d1021a\",\"urls\":[\"bzz-raw://c7cf1481443afad193947fd2458bacbf5a61efb3bcaa567788c7cbd08a918988\",\"dweb:/ipfs/QmRguJYRbDmsikwTddDzjwwMCskc78YBLPUQMqtygYr88q\"]}},\"version\":1}",
+  "bytecode": "0x60556023600b82828239805160001a607314601657fe5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600080fdfea265627a7a7231582080b9850f2994be86b538c088d5664f9093cdbeaa278a58571fbcca3ad40b39c664736f6c634300050d0032",
+  "deployedBytecode": "0x73000000000000000000000000000000000000000030146080604052600080fdfea265627a7a7231582080b9850f2994be86b538c088d5664f9093cdbeaa278a58571fbcca3ad40b39c664736f6c634300050d0032",
+  "sourceMap": "589:1702:3:-;;132:2:-1;166:7;155:9;146:7;137:37;255:7;249:14;246:1;241:23;235:4;232:33;222:2;;269:9;222:2;293:9;290:1;283:20;323:4;314:7;306:22;347:7;338;331:24",
+  "deployedSourceMap": "589:1702:3:-;;;;;;;;",
+  "source": "pragma solidity ^0.5.0;\n\n/**\n * @dev Wrappers over Solidity's arithmetic operations with added overflow\n * checks.\n *\n * Arithmetic operations in Solidity wrap on overflow. This can easily result\n * in bugs, because programmers usually assume that an overflow raises an\n * error, which is the standard behavior in high level programming languages.\n * `SafeMath` restores this intuition by reverting the transaction when an\n * operation overflows.\n *\n * Using this library instead of the unchecked operations eliminates an entire\n * class of bugs, so it's recommended to use it always.\n */\nlibrary SafeMath {event __CoverageSafeMath(string fileName, uint256 lineNumber);\nevent __FunctionCoverageSafeMath(string fileName, uint256 fnId);\nevent __StatementCoverageSafeMath(string fileName, uint256 statementId);\nevent __BranchCoverageSafeMath(string fileName, uint256 branchId, uint256 locationIdx);\nevent __AssertPreCoverageSafeMath(string fileName, uint256 branchId);\nevent __AssertPostCoverageSafeMath(string fileName, uint256 branchId);\n\n    /**\n     * @dev Returns the addition of two unsigned integers, reverting on\n     * overflow.\n     *\n     * Counterpart to Solidity's `+` operator.\n     *\n     * Requirements:\n     * - Addition cannot overflow.\n     */\n    function add(uint256 a, uint256 b) internal      returns (uint256) {emit __FunctionCoverageSafeMath('/Volumes/Data/Projects/Unlock-dApp/contracts/SafeMath.sol',1);\n\nemit __CoverageSafeMath('/Volumes/Data/Projects/Unlock-dApp/contracts/SafeMath.sol',27);\n        emit __StatementCoverageSafeMath('/Volumes/Data/Projects/Unlock-dApp/contracts/SafeMath.sol',1);\nuint256 c = a + b;\nemit __CoverageSafeMath('/Volumes/Data/Projects/Unlock-dApp/contracts/SafeMath.sol',28);\n        emit __AssertPreCoverageSafeMath('/Volumes/Data/Projects/Unlock-dApp/contracts/SafeMath.sol',1);\nemit __StatementCoverageSafeMath('/Volumes/Data/Projects/Unlock-dApp/contracts/SafeMath.sol',2);\nrequire(c >= a, \"SafeMath: addition overflow\");emit __AssertPostCoverageSafeMath('/Volumes/Data/Projects/Unlock-dApp/contracts/SafeMath.sol',1);\n\n\nemit __CoverageSafeMath('/Volumes/Data/Projects/Unlock-dApp/contracts/SafeMath.sol',30);\n        emit __StatementCoverageSafeMath('/Volumes/Data/Projects/Unlock-dApp/contracts/SafeMath.sol',3);\nreturn c;\n    }\n}",
+  "sourcePath": "/Volumes/Data/Projects/Unlock-dApp/coverageEnv/contracts/SafeMath.sol",
+  "ast": {
+    "absolutePath": "/Volumes/Data/Projects/Unlock-dApp/coverageEnv/contracts/SafeMath.sol",
+    "exportedSymbols": {
+      "SafeMath": [
+        1996
+      ]
+    },
+    "id": 1997,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1887,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:3"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "library",
+        "documentation": "@dev Wrappers over Solidity's arithmetic operations with added overflow\nchecks.\n * Arithmetic operations in Solidity wrap on overflow. This can easily result\nin bugs, because programmers usually assume that an overflow raises an\nerror, which is the standard behavior in high level programming languages.\n`SafeMath` restores this intuition by reverting the transaction when an\noperation overflows.\n * Using this library instead of the unchecked operations eliminates an entire\nclass of bugs, so it's recommended to use it always.",
+        "fullyImplemented": true,
+        "id": 1996,
+        "linearizedBaseContracts": [
+          1996
+        ],
+        "name": "SafeMath",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "anonymous": false,
+            "documentation": null,
+            "id": 1893,
+            "name": "__CoverageSafeMath",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 1892,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1889,
+                  "indexed": false,
+                  "name": "fileName",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1893,
+                  "src": "632:15:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 1888,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "632:6:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1891,
+                  "indexed": false,
+                  "name": "lineNumber",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1893,
+                  "src": "649:18:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1890,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "649:7:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "631:37:3"
+            },
+            "src": "607:62:3"
+          },
+          {
+            "anonymous": false,
+            "documentation": null,
+            "id": 1899,
+            "name": "__FunctionCoverageSafeMath",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 1898,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1895,
+                  "indexed": false,
+                  "name": "fileName",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1899,
+                  "src": "703:15:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 1894,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "703:6:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1897,
+                  "indexed": false,
+                  "name": "fnId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1899,
+                  "src": "720:12:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1896,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "720:7:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "702:31:3"
+            },
+            "src": "670:64:3"
+          },
+          {
+            "anonymous": false,
+            "documentation": null,
+            "id": 1905,
+            "name": "__StatementCoverageSafeMath",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 1904,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1901,
+                  "indexed": false,
+                  "name": "fileName",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1905,
+                  "src": "769:15:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 1900,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "769:6:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1903,
+                  "indexed": false,
+                  "name": "statementId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1905,
+                  "src": "786:19:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1902,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "786:7:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "768:38:3"
+            },
+            "src": "735:72:3"
+          },
+          {
+            "anonymous": false,
+            "documentation": null,
+            "id": 1913,
+            "name": "__BranchCoverageSafeMath",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 1912,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1907,
+                  "indexed": false,
+                  "name": "fileName",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1913,
+                  "src": "839:15:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 1906,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "839:6:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1909,
+                  "indexed": false,
+                  "name": "branchId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1913,
+                  "src": "856:16:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1908,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "856:7:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1911,
+                  "indexed": false,
+                  "name": "locationIdx",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1913,
+                  "src": "874:19:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1910,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "874:7:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "838:56:3"
+            },
+            "src": "808:87:3"
+          },
+          {
+            "anonymous": false,
+            "documentation": null,
+            "id": 1919,
+            "name": "__AssertPreCoverageSafeMath",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 1918,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1915,
+                  "indexed": false,
+                  "name": "fileName",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1919,
+                  "src": "930:15:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 1914,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "930:6:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1917,
+                  "indexed": false,
+                  "name": "branchId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1919,
+                  "src": "947:16:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1916,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "947:7:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "929:35:3"
+            },
+            "src": "896:69:3"
+          },
+          {
+            "anonymous": false,
+            "documentation": null,
+            "id": 1925,
+            "name": "__AssertPostCoverageSafeMath",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 1924,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1921,
+                  "indexed": false,
+                  "name": "fileName",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1925,
+                  "src": "1001:15:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 1920,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1001:6:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1923,
+                  "indexed": false,
+                  "name": "branchId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1925,
+                  "src": "1018:16:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1922,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1018:7:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1000:35:3"
+            },
+            "src": "966:70:3"
+          },
+          {
+            "body": {
+              "id": 1994,
+              "nodeType": "Block",
+              "src": "1331:958:3",
+              "statements": [
+                {
+                  "eventCall": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "2f566f6c756d65732f446174612f50726f6a656374732f556e6c6f636b2d644170702f636f6e7472616374732f536166654d6174682e736f6c",
+                        "id": 1935,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "1364:59:3",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_cbd932a179c94c354592ec76dbe88e5bfc0f39a842ded1f35bca4a67d222b2bb",
+                          "typeString": "literal_string \"/Volumes/Data/Projects/Unlock-dApp/contracts/SafeMath.sol\""
+                        },
+                        "value": "/Volumes/Data/Projects/Unlock-dApp/contracts/SafeMath.sol"
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "31",
+                        "id": 1936,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "1424:1:3",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_1_by_1",
+                          "typeString": "int_const 1"
+                        },
+                        "value": "1"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_stringliteral_cbd932a179c94c354592ec76dbe88e5bfc0f39a842ded1f35bca4a67d222b2bb",
+                          "typeString": "literal_string \"/Volumes/Data/Projects/Unlock-dApp/contracts/SafeMath.sol\""
+                        },
+                        {
+                          "typeIdentifier": "t_rational_1_by_1",
+                          "typeString": "int_const 1"
+                        }
+                      ],
+                      "id": 1934,
+                      "name": "__FunctionCoverageSafeMath",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1899,
+                      "src": "1337:26:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_string_memory_ptr_$_t_uint256_$returns$__$",
+                        "typeString": "function (string memory,uint256)"
+                      }
+                    },
+                    "id": 1937,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1337:89:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 1938,
+                  "nodeType": "EmitStatement",
+                  "src": "1332:94:3"
+                },
+                {
+                  "eventCall": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "2f566f6c756d65732f446174612f50726f6a656374732f556e6c6f636b2d644170702f636f6e7472616374732f536166654d6174682e736f6c",
+                        "id": 1940,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "1453:59:3",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_cbd932a179c94c354592ec76dbe88e5bfc0f39a842ded1f35bca4a67d222b2bb",
+                          "typeString": "literal_string \"/Volumes/Data/Projects/Unlock-dApp/contracts/SafeMath.sol\""
+                        },
+                        "value": "/Volumes/Data/Projects/Unlock-dApp/contracts/SafeMath.sol"
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "3237",
+                        "id": 1941,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "1513:2:3",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_27_by_1",
+                          "typeString": "int_const 27"
+                        },
+                        "value": "27"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_stringliteral_cbd932a179c94c354592ec76dbe88e5bfc0f39a842ded1f35bca4a67d222b2bb",
+                          "typeString": "literal_string \"/Volumes/Data/Projects/Unlock-dApp/contracts/SafeMath.sol\""
+                        },
+                        {
+                          "typeIdentifier": "t_rational_27_by_1",
+                          "typeString": "int_const 27"
+                        }
+                      ],
+                      "id": 1939,
+                      "name": "__CoverageSafeMath",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1893,
+                      "src": "1434:18:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_string_memory_ptr_$_t_uint256_$returns$__$",
+                        "typeString": "function (string memory,uint256)"
+                      }
+                    },
+                    "id": 1942,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1434:82:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 1943,
+                  "nodeType": "EmitStatement",
+                  "src": "1429:87:3"
+                },
+                {
+                  "eventCall": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "2f566f6c756d65732f446174612f50726f6a656374732f556e6c6f636b2d644170702f636f6e7472616374732f536166654d6174682e736f6c",
+                        "id": 1945,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "1559:59:3",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_cbd932a179c94c354592ec76dbe88e5bfc0f39a842ded1f35bca4a67d222b2bb",
+                          "typeString": "literal_string \"/Volumes/Data/Projects/Unlock-dApp/contracts/SafeMath.sol\""
+                        },
+                        "value": "/Volumes/Data/Projects/Unlock-dApp/contracts/SafeMath.sol"
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "31",
+                        "id": 1946,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "1619:1:3",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_1_by_1",
+                          "typeString": "int_const 1"
+                        },
+                        "value": "1"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_stringliteral_cbd932a179c94c354592ec76dbe88e5bfc0f39a842ded1f35bca4a67d222b2bb",
+                          "typeString": "literal_string \"/Volumes/Data/Projects/Unlock-dApp/contracts/SafeMath.sol\""
+                        },
+                        {
+                          "typeIdentifier": "t_rational_1_by_1",
+                          "typeString": "int_const 1"
+                        }
+                      ],
+                      "id": 1944,
+                      "name": "__StatementCoverageSafeMath",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1905,
+                      "src": "1531:27:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_string_memory_ptr_$_t_uint256_$returns$__$",
+                        "typeString": "function (string memory,uint256)"
+                      }
+                    },
+                    "id": 1947,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1531:90:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 1948,
+                  "nodeType": "EmitStatement",
+                  "src": "1526:95:3"
+                },
+                {
+                  "assignments": [
+                    1950
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 1950,
+                      "name": "c",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 1994,
+                      "src": "1623:9:3",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      },
+                      "typeName": {
+                        "id": 1949,
+                        "name": "uint256",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "1623:7:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 1954,
+                  "initialValue": {
+                    "argumentTypes": null,
+                    "commonType": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    },
+                    "id": 1953,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "argumentTypes": null,
+                      "id": 1951,
+                      "name": "a",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1927,
+                      "src": "1635:1:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "+",
+                    "rightExpression": {
+                      "argumentTypes": null,
+                      "id": 1952,
+                      "name": "b",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1929,
+                      "src": "1639:1:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "1635:5:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "1623:17:3"
+                },
+                {
+                  "eventCall": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "2f566f6c756d65732f446174612f50726f6a656374732f556e6c6f636b2d644170702f636f6e7472616374732f536166654d6174682e736f6c",
+                        "id": 1956,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "1666:59:3",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_cbd932a179c94c354592ec76dbe88e5bfc0f39a842ded1f35bca4a67d222b2bb",
+                          "typeString": "literal_string \"/Volumes/Data/Projects/Unlock-dApp/contracts/SafeMath.sol\""
+                        },
+                        "value": "/Volumes/Data/Projects/Unlock-dApp/contracts/SafeMath.sol"
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "3238",
+                        "id": 1957,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "1726:2:3",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_28_by_1",
+                          "typeString": "int_const 28"
+                        },
+                        "value": "28"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_stringliteral_cbd932a179c94c354592ec76dbe88e5bfc0f39a842ded1f35bca4a67d222b2bb",
+                          "typeString": "literal_string \"/Volumes/Data/Projects/Unlock-dApp/contracts/SafeMath.sol\""
+                        },
+                        {
+                          "typeIdentifier": "t_rational_28_by_1",
+                          "typeString": "int_const 28"
+                        }
+                      ],
+                      "id": 1955,
+                      "name": "__CoverageSafeMath",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1893,
+                      "src": "1647:18:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_string_memory_ptr_$_t_uint256_$returns$__$",
+                        "typeString": "function (string memory,uint256)"
+                      }
+                    },
+                    "id": 1958,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1647:82:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 1959,
+                  "nodeType": "EmitStatement",
+                  "src": "1642:87:3"
+                },
+                {
+                  "eventCall": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "2f566f6c756d65732f446174612f50726f6a656374732f556e6c6f636b2d644170702f636f6e7472616374732f536166654d6174682e736f6c",
+                        "id": 1961,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "1772:59:3",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_cbd932a179c94c354592ec76dbe88e5bfc0f39a842ded1f35bca4a67d222b2bb",
+                          "typeString": "literal_string \"/Volumes/Data/Projects/Unlock-dApp/contracts/SafeMath.sol\""
+                        },
+                        "value": "/Volumes/Data/Projects/Unlock-dApp/contracts/SafeMath.sol"
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "31",
+                        "id": 1962,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "1832:1:3",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_1_by_1",
+                          "typeString": "int_const 1"
+                        },
+                        "value": "1"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_stringliteral_cbd932a179c94c354592ec76dbe88e5bfc0f39a842ded1f35bca4a67d222b2bb",
+                          "typeString": "literal_string \"/Volumes/Data/Projects/Unlock-dApp/contracts/SafeMath.sol\""
+                        },
+                        {
+                          "typeIdentifier": "t_rational_1_by_1",
+                          "typeString": "int_const 1"
+                        }
+                      ],
+                      "id": 1960,
+                      "name": "__AssertPreCoverageSafeMath",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1919,
+                      "src": "1744:27:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_string_memory_ptr_$_t_uint256_$returns$__$",
+                        "typeString": "function (string memory,uint256)"
+                      }
+                    },
+                    "id": 1963,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1744:90:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 1964,
+                  "nodeType": "EmitStatement",
+                  "src": "1739:95:3"
+                },
+                {
+                  "eventCall": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "2f566f6c756d65732f446174612f50726f6a656374732f556e6c6f636b2d644170702f636f6e7472616374732f536166654d6174682e736f6c",
+                        "id": 1966,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "1869:59:3",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_cbd932a179c94c354592ec76dbe88e5bfc0f39a842ded1f35bca4a67d222b2bb",
+                          "typeString": "literal_string \"/Volumes/Data/Projects/Unlock-dApp/contracts/SafeMath.sol\""
+                        },
+                        "value": "/Volumes/Data/Projects/Unlock-dApp/contracts/SafeMath.sol"
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "32",
+                        "id": 1967,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "1929:1:3",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_2_by_1",
+                          "typeString": "int_const 2"
+                        },
+                        "value": "2"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_stringliteral_cbd932a179c94c354592ec76dbe88e5bfc0f39a842ded1f35bca4a67d222b2bb",
+                          "typeString": "literal_string \"/Volumes/Data/Projects/Unlock-dApp/contracts/SafeMath.sol\""
+                        },
+                        {
+                          "typeIdentifier": "t_rational_2_by_1",
+                          "typeString": "int_const 2"
+                        }
+                      ],
+                      "id": 1965,
+                      "name": "__StatementCoverageSafeMath",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1905,
+                      "src": "1841:27:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_string_memory_ptr_$_t_uint256_$returns$__$",
+                        "typeString": "function (string memory,uint256)"
+                      }
+                    },
+                    "id": 1968,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1841:90:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 1969,
+                  "nodeType": "EmitStatement",
+                  "src": "1836:95:3"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "commonType": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        "id": 1973,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "argumentTypes": null,
+                          "id": 1971,
+                          "name": "c",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 1950,
+                          "src": "1941:1:3",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": ">=",
+                        "rightExpression": {
+                          "argumentTypes": null,
+                          "id": 1972,
+                          "name": "a",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 1927,
+                          "src": "1946:1:3",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "src": "1941:6:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "536166654d6174683a206164646974696f6e206f766572666c6f77",
+                        "id": 1974,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "1949:29:3",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_30cc447bcc13b3e22b45cef0dd9b0b514842d836dd9b6eb384e20dedfb47723a",
+                          "typeString": "literal_string \"SafeMath: addition overflow\""
+                        },
+                        "value": "SafeMath: addition overflow"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_30cc447bcc13b3e22b45cef0dd9b0b514842d836dd9b6eb384e20dedfb47723a",
+                          "typeString": "literal_string \"SafeMath: addition overflow\""
+                        }
+                      ],
+                      "id": 1970,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        2367,
+                        2368
+                      ],
+                      "referencedDeclaration": 2368,
+                      "src": "1933:7:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (bool,string memory) pure"
+                      }
+                    },
+                    "id": 1975,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1933:46:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 1976,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1933:46:3"
+                },
+                {
+                  "eventCall": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "2f566f6c756d65732f446174612f50726f6a656374732f556e6c6f636b2d644170702f636f6e7472616374732f536166654d6174682e736f6c",
+                        "id": 1978,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "2014:59:3",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_cbd932a179c94c354592ec76dbe88e5bfc0f39a842ded1f35bca4a67d222b2bb",
+                          "typeString": "literal_string \"/Volumes/Data/Projects/Unlock-dApp/contracts/SafeMath.sol\""
+                        },
+                        "value": "/Volumes/Data/Projects/Unlock-dApp/contracts/SafeMath.sol"
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "31",
+                        "id": 1979,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "2074:1:3",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_1_by_1",
+                          "typeString": "int_const 1"
+                        },
+                        "value": "1"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_stringliteral_cbd932a179c94c354592ec76dbe88e5bfc0f39a842ded1f35bca4a67d222b2bb",
+                          "typeString": "literal_string \"/Volumes/Data/Projects/Unlock-dApp/contracts/SafeMath.sol\""
+                        },
+                        {
+                          "typeIdentifier": "t_rational_1_by_1",
+                          "typeString": "int_const 1"
+                        }
+                      ],
+                      "id": 1977,
+                      "name": "__AssertPostCoverageSafeMath",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1925,
+                      "src": "1985:28:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_string_memory_ptr_$_t_uint256_$returns$__$",
+                        "typeString": "function (string memory,uint256)"
+                      }
+                    },
+                    "id": 1980,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1985:91:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 1981,
+                  "nodeType": "EmitStatement",
+                  "src": "1980:96:3"
+                },
+                {
+                  "eventCall": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "2f566f6c756d65732f446174612f50726f6a656374732f556e6c6f636b2d644170702f636f6e7472616374732f536166654d6174682e736f6c",
+                        "id": 1983,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "2104:59:3",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_cbd932a179c94c354592ec76dbe88e5bfc0f39a842ded1f35bca4a67d222b2bb",
+                          "typeString": "literal_string \"/Volumes/Data/Projects/Unlock-dApp/contracts/SafeMath.sol\""
+                        },
+                        "value": "/Volumes/Data/Projects/Unlock-dApp/contracts/SafeMath.sol"
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "3330",
+                        "id": 1984,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "2164:2:3",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_30_by_1",
+                          "typeString": "int_const 30"
+                        },
+                        "value": "30"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_stringliteral_cbd932a179c94c354592ec76dbe88e5bfc0f39a842ded1f35bca4a67d222b2bb",
+                          "typeString": "literal_string \"/Volumes/Data/Projects/Unlock-dApp/contracts/SafeMath.sol\""
+                        },
+                        {
+                          "typeIdentifier": "t_rational_30_by_1",
+                          "typeString": "int_const 30"
+                        }
+                      ],
+                      "id": 1982,
+                      "name": "__CoverageSafeMath",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1893,
+                      "src": "2085:18:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_string_memory_ptr_$_t_uint256_$returns$__$",
+                        "typeString": "function (string memory,uint256)"
+                      }
+                    },
+                    "id": 1985,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "2085:82:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 1986,
+                  "nodeType": "EmitStatement",
+                  "src": "2080:87:3"
+                },
+                {
+                  "eventCall": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "2f566f6c756d65732f446174612f50726f6a656374732f556e6c6f636b2d644170702f636f6e7472616374732f536166654d6174682e736f6c",
+                        "id": 1988,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "2210:59:3",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_cbd932a179c94c354592ec76dbe88e5bfc0f39a842ded1f35bca4a67d222b2bb",
+                          "typeString": "literal_string \"/Volumes/Data/Projects/Unlock-dApp/contracts/SafeMath.sol\""
+                        },
+                        "value": "/Volumes/Data/Projects/Unlock-dApp/contracts/SafeMath.sol"
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "33",
+                        "id": 1989,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "2270:1:3",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_3_by_1",
+                          "typeString": "int_const 3"
+                        },
+                        "value": "3"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_stringliteral_cbd932a179c94c354592ec76dbe88e5bfc0f39a842ded1f35bca4a67d222b2bb",
+                          "typeString": "literal_string \"/Volumes/Data/Projects/Unlock-dApp/contracts/SafeMath.sol\""
+                        },
+                        {
+                          "typeIdentifier": "t_rational_3_by_1",
+                          "typeString": "int_const 3"
+                        }
+                      ],
+                      "id": 1987,
+                      "name": "__StatementCoverageSafeMath",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1905,
+                      "src": "2182:27:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_string_memory_ptr_$_t_uint256_$returns$__$",
+                        "typeString": "function (string memory,uint256)"
+                      }
+                    },
+                    "id": 1990,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "2182:90:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 1991,
+                  "nodeType": "EmitStatement",
+                  "src": "2177:95:3"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 1992,
+                    "name": "c",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 1950,
+                    "src": "2281:1:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 1933,
+                  "id": 1993,
+                  "nodeType": "Return",
+                  "src": "2274:8:3"
+                }
+              ]
+            },
+            "documentation": "@dev Returns the addition of two unsigned integers, reverting on\noverflow.\n     * Counterpart to Solidity's `+` operator.\n     * Requirements:\n- Addition cannot overflow.",
+            "id": 1995,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "add",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1930,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1927,
+                  "name": "a",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1995,
+                  "src": "1277:9:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1926,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1277:7:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1929,
+                  "name": "b",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1995,
+                  "src": "1288:9:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1928,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1288:7:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1276:22:3"
+            },
+            "returnParameters": {
+              "id": 1933,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1932,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1995,
+                  "src": "1322:7:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1931,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1322:7:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1321:9:3"
+            },
+            "scope": 1996,
+            "src": "1264:1025:3",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "internal"
+          }
+        ],
+        "scope": 1997,
+        "src": "589:1702:3"
+      }
+    ],
+    "src": "0:2291:3"
+  },
+  "legacyAST": {
+    "absolutePath": "/Volumes/Data/Projects/Unlock-dApp/coverageEnv/contracts/SafeMath.sol",
+    "exportedSymbols": {
+      "SafeMath": [
+        1996
+      ]
+    },
+    "id": 1997,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1887,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:3"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "library",
+        "documentation": "@dev Wrappers over Solidity's arithmetic operations with added overflow\nchecks.\n * Arithmetic operations in Solidity wrap on overflow. This can easily result\nin bugs, because programmers usually assume that an overflow raises an\nerror, which is the standard behavior in high level programming languages.\n`SafeMath` restores this intuition by reverting the transaction when an\noperation overflows.\n * Using this library instead of the unchecked operations eliminates an entire\nclass of bugs, so it's recommended to use it always.",
+        "fullyImplemented": true,
+        "id": 1996,
+        "linearizedBaseContracts": [
+          1996
+        ],
+        "name": "SafeMath",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "anonymous": false,
+            "documentation": null,
+            "id": 1893,
+            "name": "__CoverageSafeMath",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 1892,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1889,
+                  "indexed": false,
+                  "name": "fileName",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1893,
+                  "src": "632:15:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 1888,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "632:6:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1891,
+                  "indexed": false,
+                  "name": "lineNumber",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1893,
+                  "src": "649:18:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1890,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "649:7:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "631:37:3"
+            },
+            "src": "607:62:3"
+          },
+          {
+            "anonymous": false,
+            "documentation": null,
+            "id": 1899,
+            "name": "__FunctionCoverageSafeMath",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 1898,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1895,
+                  "indexed": false,
+                  "name": "fileName",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1899,
+                  "src": "703:15:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 1894,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "703:6:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1897,
+                  "indexed": false,
+                  "name": "fnId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1899,
+                  "src": "720:12:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1896,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "720:7:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "702:31:3"
+            },
+            "src": "670:64:3"
+          },
+          {
+            "anonymous": false,
+            "documentation": null,
+            "id": 1905,
+            "name": "__StatementCoverageSafeMath",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 1904,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1901,
+                  "indexed": false,
+                  "name": "fileName",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1905,
+                  "src": "769:15:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 1900,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "769:6:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1903,
+                  "indexed": false,
+                  "name": "statementId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1905,
+                  "src": "786:19:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1902,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "786:7:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "768:38:3"
+            },
+            "src": "735:72:3"
+          },
+          {
+            "anonymous": false,
+            "documentation": null,
+            "id": 1913,
+            "name": "__BranchCoverageSafeMath",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 1912,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1907,
+                  "indexed": false,
+                  "name": "fileName",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1913,
+                  "src": "839:15:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 1906,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "839:6:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1909,
+                  "indexed": false,
+                  "name": "branchId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1913,
+                  "src": "856:16:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1908,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "856:7:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1911,
+                  "indexed": false,
+                  "name": "locationIdx",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1913,
+                  "src": "874:19:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1910,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "874:7:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "838:56:3"
+            },
+            "src": "808:87:3"
+          },
+          {
+            "anonymous": false,
+            "documentation": null,
+            "id": 1919,
+            "name": "__AssertPreCoverageSafeMath",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 1918,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1915,
+                  "indexed": false,
+                  "name": "fileName",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1919,
+                  "src": "930:15:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 1914,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "930:6:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1917,
+                  "indexed": false,
+                  "name": "branchId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1919,
+                  "src": "947:16:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1916,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "947:7:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "929:35:3"
+            },
+            "src": "896:69:3"
+          },
+          {
+            "anonymous": false,
+            "documentation": null,
+            "id": 1925,
+            "name": "__AssertPostCoverageSafeMath",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 1924,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1921,
+                  "indexed": false,
+                  "name": "fileName",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1925,
+                  "src": "1001:15:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 1920,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1001:6:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1923,
+                  "indexed": false,
+                  "name": "branchId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1925,
+                  "src": "1018:16:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1922,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1018:7:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1000:35:3"
+            },
+            "src": "966:70:3"
+          },
+          {
+            "body": {
+              "id": 1994,
+              "nodeType": "Block",
+              "src": "1331:958:3",
+              "statements": [
+                {
+                  "eventCall": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "2f566f6c756d65732f446174612f50726f6a656374732f556e6c6f636b2d644170702f636f6e7472616374732f536166654d6174682e736f6c",
+                        "id": 1935,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "1364:59:3",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_cbd932a179c94c354592ec76dbe88e5bfc0f39a842ded1f35bca4a67d222b2bb",
+                          "typeString": "literal_string \"/Volumes/Data/Projects/Unlock-dApp/contracts/SafeMath.sol\""
+                        },
+                        "value": "/Volumes/Data/Projects/Unlock-dApp/contracts/SafeMath.sol"
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "31",
+                        "id": 1936,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "1424:1:3",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_1_by_1",
+                          "typeString": "int_const 1"
+                        },
+                        "value": "1"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_stringliteral_cbd932a179c94c354592ec76dbe88e5bfc0f39a842ded1f35bca4a67d222b2bb",
+                          "typeString": "literal_string \"/Volumes/Data/Projects/Unlock-dApp/contracts/SafeMath.sol\""
+                        },
+                        {
+                          "typeIdentifier": "t_rational_1_by_1",
+                          "typeString": "int_const 1"
+                        }
+                      ],
+                      "id": 1934,
+                      "name": "__FunctionCoverageSafeMath",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1899,
+                      "src": "1337:26:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_string_memory_ptr_$_t_uint256_$returns$__$",
+                        "typeString": "function (string memory,uint256)"
+                      }
+                    },
+                    "id": 1937,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1337:89:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 1938,
+                  "nodeType": "EmitStatement",
+                  "src": "1332:94:3"
+                },
+                {
+                  "eventCall": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "2f566f6c756d65732f446174612f50726f6a656374732f556e6c6f636b2d644170702f636f6e7472616374732f536166654d6174682e736f6c",
+                        "id": 1940,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "1453:59:3",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_cbd932a179c94c354592ec76dbe88e5bfc0f39a842ded1f35bca4a67d222b2bb",
+                          "typeString": "literal_string \"/Volumes/Data/Projects/Unlock-dApp/contracts/SafeMath.sol\""
+                        },
+                        "value": "/Volumes/Data/Projects/Unlock-dApp/contracts/SafeMath.sol"
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "3237",
+                        "id": 1941,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "1513:2:3",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_27_by_1",
+                          "typeString": "int_const 27"
+                        },
+                        "value": "27"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_stringliteral_cbd932a179c94c354592ec76dbe88e5bfc0f39a842ded1f35bca4a67d222b2bb",
+                          "typeString": "literal_string \"/Volumes/Data/Projects/Unlock-dApp/contracts/SafeMath.sol\""
+                        },
+                        {
+                          "typeIdentifier": "t_rational_27_by_1",
+                          "typeString": "int_const 27"
+                        }
+                      ],
+                      "id": 1939,
+                      "name": "__CoverageSafeMath",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1893,
+                      "src": "1434:18:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_string_memory_ptr_$_t_uint256_$returns$__$",
+                        "typeString": "function (string memory,uint256)"
+                      }
+                    },
+                    "id": 1942,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1434:82:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 1943,
+                  "nodeType": "EmitStatement",
+                  "src": "1429:87:3"
+                },
+                {
+                  "eventCall": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "2f566f6c756d65732f446174612f50726f6a656374732f556e6c6f636b2d644170702f636f6e7472616374732f536166654d6174682e736f6c",
+                        "id": 1945,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "1559:59:3",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_cbd932a179c94c354592ec76dbe88e5bfc0f39a842ded1f35bca4a67d222b2bb",
+                          "typeString": "literal_string \"/Volumes/Data/Projects/Unlock-dApp/contracts/SafeMath.sol\""
+                        },
+                        "value": "/Volumes/Data/Projects/Unlock-dApp/contracts/SafeMath.sol"
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "31",
+                        "id": 1946,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "1619:1:3",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_1_by_1",
+                          "typeString": "int_const 1"
+                        },
+                        "value": "1"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_stringliteral_cbd932a179c94c354592ec76dbe88e5bfc0f39a842ded1f35bca4a67d222b2bb",
+                          "typeString": "literal_string \"/Volumes/Data/Projects/Unlock-dApp/contracts/SafeMath.sol\""
+                        },
+                        {
+                          "typeIdentifier": "t_rational_1_by_1",
+                          "typeString": "int_const 1"
+                        }
+                      ],
+                      "id": 1944,
+                      "name": "__StatementCoverageSafeMath",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1905,
+                      "src": "1531:27:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_string_memory_ptr_$_t_uint256_$returns$__$",
+                        "typeString": "function (string memory,uint256)"
+                      }
+                    },
+                    "id": 1947,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1531:90:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 1948,
+                  "nodeType": "EmitStatement",
+                  "src": "1526:95:3"
+                },
+                {
+                  "assignments": [
+                    1950
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 1950,
+                      "name": "c",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 1994,
+                      "src": "1623:9:3",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      },
+                      "typeName": {
+                        "id": 1949,
+                        "name": "uint256",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "1623:7:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 1954,
+                  "initialValue": {
+                    "argumentTypes": null,
+                    "commonType": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    },
+                    "id": 1953,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "argumentTypes": null,
+                      "id": 1951,
+                      "name": "a",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1927,
+                      "src": "1635:1:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "+",
+                    "rightExpression": {
+                      "argumentTypes": null,
+                      "id": 1952,
+                      "name": "b",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1929,
+                      "src": "1639:1:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "1635:5:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "1623:17:3"
+                },
+                {
+                  "eventCall": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "2f566f6c756d65732f446174612f50726f6a656374732f556e6c6f636b2d644170702f636f6e7472616374732f536166654d6174682e736f6c",
+                        "id": 1956,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "1666:59:3",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_cbd932a179c94c354592ec76dbe88e5bfc0f39a842ded1f35bca4a67d222b2bb",
+                          "typeString": "literal_string \"/Volumes/Data/Projects/Unlock-dApp/contracts/SafeMath.sol\""
+                        },
+                        "value": "/Volumes/Data/Projects/Unlock-dApp/contracts/SafeMath.sol"
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "3238",
+                        "id": 1957,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "1726:2:3",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_28_by_1",
+                          "typeString": "int_const 28"
+                        },
+                        "value": "28"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_stringliteral_cbd932a179c94c354592ec76dbe88e5bfc0f39a842ded1f35bca4a67d222b2bb",
+                          "typeString": "literal_string \"/Volumes/Data/Projects/Unlock-dApp/contracts/SafeMath.sol\""
+                        },
+                        {
+                          "typeIdentifier": "t_rational_28_by_1",
+                          "typeString": "int_const 28"
+                        }
+                      ],
+                      "id": 1955,
+                      "name": "__CoverageSafeMath",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1893,
+                      "src": "1647:18:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_string_memory_ptr_$_t_uint256_$returns$__$",
+                        "typeString": "function (string memory,uint256)"
+                      }
+                    },
+                    "id": 1958,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1647:82:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 1959,
+                  "nodeType": "EmitStatement",
+                  "src": "1642:87:3"
+                },
+                {
+                  "eventCall": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "2f566f6c756d65732f446174612f50726f6a656374732f556e6c6f636b2d644170702f636f6e7472616374732f536166654d6174682e736f6c",
+                        "id": 1961,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "1772:59:3",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_cbd932a179c94c354592ec76dbe88e5bfc0f39a842ded1f35bca4a67d222b2bb",
+                          "typeString": "literal_string \"/Volumes/Data/Projects/Unlock-dApp/contracts/SafeMath.sol\""
+                        },
+                        "value": "/Volumes/Data/Projects/Unlock-dApp/contracts/SafeMath.sol"
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "31",
+                        "id": 1962,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "1832:1:3",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_1_by_1",
+                          "typeString": "int_const 1"
+                        },
+                        "value": "1"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_stringliteral_cbd932a179c94c354592ec76dbe88e5bfc0f39a842ded1f35bca4a67d222b2bb",
+                          "typeString": "literal_string \"/Volumes/Data/Projects/Unlock-dApp/contracts/SafeMath.sol\""
+                        },
+                        {
+                          "typeIdentifier": "t_rational_1_by_1",
+                          "typeString": "int_const 1"
+                        }
+                      ],
+                      "id": 1960,
+                      "name": "__AssertPreCoverageSafeMath",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1919,
+                      "src": "1744:27:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_string_memory_ptr_$_t_uint256_$returns$__$",
+                        "typeString": "function (string memory,uint256)"
+                      }
+                    },
+                    "id": 1963,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1744:90:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 1964,
+                  "nodeType": "EmitStatement",
+                  "src": "1739:95:3"
+                },
+                {
+                  "eventCall": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "2f566f6c756d65732f446174612f50726f6a656374732f556e6c6f636b2d644170702f636f6e7472616374732f536166654d6174682e736f6c",
+                        "id": 1966,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "1869:59:3",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_cbd932a179c94c354592ec76dbe88e5bfc0f39a842ded1f35bca4a67d222b2bb",
+                          "typeString": "literal_string \"/Volumes/Data/Projects/Unlock-dApp/contracts/SafeMath.sol\""
+                        },
+                        "value": "/Volumes/Data/Projects/Unlock-dApp/contracts/SafeMath.sol"
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "32",
+                        "id": 1967,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "1929:1:3",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_2_by_1",
+                          "typeString": "int_const 2"
+                        },
+                        "value": "2"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_stringliteral_cbd932a179c94c354592ec76dbe88e5bfc0f39a842ded1f35bca4a67d222b2bb",
+                          "typeString": "literal_string \"/Volumes/Data/Projects/Unlock-dApp/contracts/SafeMath.sol\""
+                        },
+                        {
+                          "typeIdentifier": "t_rational_2_by_1",
+                          "typeString": "int_const 2"
+                        }
+                      ],
+                      "id": 1965,
+                      "name": "__StatementCoverageSafeMath",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1905,
+                      "src": "1841:27:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_string_memory_ptr_$_t_uint256_$returns$__$",
+                        "typeString": "function (string memory,uint256)"
+                      }
+                    },
+                    "id": 1968,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1841:90:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 1969,
+                  "nodeType": "EmitStatement",
+                  "src": "1836:95:3"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "commonType": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        "id": 1973,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "argumentTypes": null,
+                          "id": 1971,
+                          "name": "c",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 1950,
+                          "src": "1941:1:3",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": ">=",
+                        "rightExpression": {
+                          "argumentTypes": null,
+                          "id": 1972,
+                          "name": "a",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 1927,
+                          "src": "1946:1:3",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "src": "1941:6:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "536166654d6174683a206164646974696f6e206f766572666c6f77",
+                        "id": 1974,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "1949:29:3",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_30cc447bcc13b3e22b45cef0dd9b0b514842d836dd9b6eb384e20dedfb47723a",
+                          "typeString": "literal_string \"SafeMath: addition overflow\""
+                        },
+                        "value": "SafeMath: addition overflow"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_30cc447bcc13b3e22b45cef0dd9b0b514842d836dd9b6eb384e20dedfb47723a",
+                          "typeString": "literal_string \"SafeMath: addition overflow\""
+                        }
+                      ],
+                      "id": 1970,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        2367,
+                        2368
+                      ],
+                      "referencedDeclaration": 2368,
+                      "src": "1933:7:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (bool,string memory) pure"
+                      }
+                    },
+                    "id": 1975,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1933:46:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 1976,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1933:46:3"
+                },
+                {
+                  "eventCall": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "2f566f6c756d65732f446174612f50726f6a656374732f556e6c6f636b2d644170702f636f6e7472616374732f536166654d6174682e736f6c",
+                        "id": 1978,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "2014:59:3",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_cbd932a179c94c354592ec76dbe88e5bfc0f39a842ded1f35bca4a67d222b2bb",
+                          "typeString": "literal_string \"/Volumes/Data/Projects/Unlock-dApp/contracts/SafeMath.sol\""
+                        },
+                        "value": "/Volumes/Data/Projects/Unlock-dApp/contracts/SafeMath.sol"
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "31",
+                        "id": 1979,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "2074:1:3",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_1_by_1",
+                          "typeString": "int_const 1"
+                        },
+                        "value": "1"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_stringliteral_cbd932a179c94c354592ec76dbe88e5bfc0f39a842ded1f35bca4a67d222b2bb",
+                          "typeString": "literal_string \"/Volumes/Data/Projects/Unlock-dApp/contracts/SafeMath.sol\""
+                        },
+                        {
+                          "typeIdentifier": "t_rational_1_by_1",
+                          "typeString": "int_const 1"
+                        }
+                      ],
+                      "id": 1977,
+                      "name": "__AssertPostCoverageSafeMath",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1925,
+                      "src": "1985:28:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_string_memory_ptr_$_t_uint256_$returns$__$",
+                        "typeString": "function (string memory,uint256)"
+                      }
+                    },
+                    "id": 1980,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1985:91:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 1981,
+                  "nodeType": "EmitStatement",
+                  "src": "1980:96:3"
+                },
+                {
+                  "eventCall": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "2f566f6c756d65732f446174612f50726f6a656374732f556e6c6f636b2d644170702f636f6e7472616374732f536166654d6174682e736f6c",
+                        "id": 1983,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "2104:59:3",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_cbd932a179c94c354592ec76dbe88e5bfc0f39a842ded1f35bca4a67d222b2bb",
+                          "typeString": "literal_string \"/Volumes/Data/Projects/Unlock-dApp/contracts/SafeMath.sol\""
+                        },
+                        "value": "/Volumes/Data/Projects/Unlock-dApp/contracts/SafeMath.sol"
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "3330",
+                        "id": 1984,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "2164:2:3",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_30_by_1",
+                          "typeString": "int_const 30"
+                        },
+                        "value": "30"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_stringliteral_cbd932a179c94c354592ec76dbe88e5bfc0f39a842ded1f35bca4a67d222b2bb",
+                          "typeString": "literal_string \"/Volumes/Data/Projects/Unlock-dApp/contracts/SafeMath.sol\""
+                        },
+                        {
+                          "typeIdentifier": "t_rational_30_by_1",
+                          "typeString": "int_const 30"
+                        }
+                      ],
+                      "id": 1982,
+                      "name": "__CoverageSafeMath",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1893,
+                      "src": "2085:18:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_string_memory_ptr_$_t_uint256_$returns$__$",
+                        "typeString": "function (string memory,uint256)"
+                      }
+                    },
+                    "id": 1985,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "2085:82:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 1986,
+                  "nodeType": "EmitStatement",
+                  "src": "2080:87:3"
+                },
+                {
+                  "eventCall": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "2f566f6c756d65732f446174612f50726f6a656374732f556e6c6f636b2d644170702f636f6e7472616374732f536166654d6174682e736f6c",
+                        "id": 1988,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "2210:59:3",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_cbd932a179c94c354592ec76dbe88e5bfc0f39a842ded1f35bca4a67d222b2bb",
+                          "typeString": "literal_string \"/Volumes/Data/Projects/Unlock-dApp/contracts/SafeMath.sol\""
+                        },
+                        "value": "/Volumes/Data/Projects/Unlock-dApp/contracts/SafeMath.sol"
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "33",
+                        "id": 1989,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "2270:1:3",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_3_by_1",
+                          "typeString": "int_const 3"
+                        },
+                        "value": "3"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_stringliteral_cbd932a179c94c354592ec76dbe88e5bfc0f39a842ded1f35bca4a67d222b2bb",
+                          "typeString": "literal_string \"/Volumes/Data/Projects/Unlock-dApp/contracts/SafeMath.sol\""
+                        },
+                        {
+                          "typeIdentifier": "t_rational_3_by_1",
+                          "typeString": "int_const 3"
+                        }
+                      ],
+                      "id": 1987,
+                      "name": "__StatementCoverageSafeMath",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1905,
+                      "src": "2182:27:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_string_memory_ptr_$_t_uint256_$returns$__$",
+                        "typeString": "function (string memory,uint256)"
+                      }
+                    },
+                    "id": 1990,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "2182:90:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 1991,
+                  "nodeType": "EmitStatement",
+                  "src": "2177:95:3"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 1992,
+                    "name": "c",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 1950,
+                    "src": "2281:1:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 1933,
+                  "id": 1993,
+                  "nodeType": "Return",
+                  "src": "2274:8:3"
+                }
+              ]
+            },
+            "documentation": "@dev Returns the addition of two unsigned integers, reverting on\noverflow.\n     * Counterpart to Solidity's `+` operator.\n     * Requirements:\n- Addition cannot overflow.",
+            "id": 1995,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "add",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1930,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1927,
+                  "name": "a",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1995,
+                  "src": "1277:9:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1926,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1277:7:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1929,
+                  "name": "b",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1995,
+                  "src": "1288:9:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1928,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1288:7:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1276:22:3"
+            },
+            "returnParameters": {
+              "id": 1933,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1932,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1995,
+                  "src": "1322:7:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1931,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1322:7:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1321:9:3"
+            },
+            "scope": 1996,
+            "src": "1264:1025:3",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "internal"
+          }
+        ],
+        "scope": 1997,
+        "src": "589:1702:3"
+      }
+    ],
+    "src": "0:2291:3"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.13+commit.5b0b510c.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.19",
+  "updatedAt": "2019-12-05T22:00:51.792Z",
+  "devdoc": {
+    "details": "Wrappers over Solidity's arithmetic operations with added overflow checks. * Arithmetic operations in Solidity wrap on overflow. This can easily result in bugs, because programmers usually assume that an overflow raises an error, which is the standard behavior in high level programming languages. `SafeMath` restores this intuition by reverting the transaction when an operation overflows. * Using this library instead of the unchecked operations eliminates an entire class of bugs, so it's recommended to use it always.",
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

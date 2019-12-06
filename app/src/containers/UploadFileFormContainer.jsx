@@ -12,7 +12,8 @@ export default connect(
             isIpfsLoading: state.ipfsReducer.isLoading,
             isContractLoading: state.contractReducer.isLoading,
             fileHash: state.ipfsReducer.fileHash,
-            mainAccount: state.web3Reducer.mainAccount
+            mainAccount: state.web3Reducer.mainAccount,
+            ipfsError: state.ipfsReducer.error
         };
     }, 
     {addFileIpfs, storeContractFile}

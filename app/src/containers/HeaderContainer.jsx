@@ -5,6 +5,10 @@ import Header from '../components/Header';
 
 
 export default connect(
-    null, 
+    state => {
+        return {
+            contractError: state.contractReducer.error
+        };
+    }, 
     null
 )(Header);

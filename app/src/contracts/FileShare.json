@@ -1,6 +1,6 @@
 {
   "contractName": "FileShare",
-  "address": "0x64C473482861a327219bC4f01b927Ff7B542EbAe",
+  "address": "0x8d4E9Ef36129105945F33c2b12AB739A419ed3E0",
   "abi": [
     {
       "constant": false,
@@ -17,6 +17,95 @@
           "internalType": "uint256",
           "name": "",
           "type": "uint256"
+        }
+      ],
+      "payable": true,
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "id",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "donated",
+          "type": "uint256"
+        }
+      ],
+      "name": "DonateEvent",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "id",
+          "type": "uint256"
+        }
+      ],
+      "name": "InsertedFileEvent",
+      "type": "event"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_goal",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "_fileLink",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "_title",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "_description",
+          "type": "string"
+        }
+      ],
+      "name": "storeFile",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_index",
+          "type": "uint256"
+        }
+      ],
+      "name": "withdraw",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
         }
       ],
       "payable": true,
@@ -78,63 +167,6 @@
       ],
       "payable": false,
       "stateMutability": "view",
-      "type": "function"
-    },
-    {
-      "constant": false,
-      "inputs": [
-        {
-          "internalType": "uint256",
-          "name": "_goal",
-          "type": "uint256"
-        },
-        {
-          "internalType": "string",
-          "name": "_fileLink",
-          "type": "string"
-        },
-        {
-          "internalType": "string",
-          "name": "_title",
-          "type": "string"
-        },
-        {
-          "internalType": "string",
-          "name": "_description",
-          "type": "string"
-        }
-      ],
-      "name": "storeFile",
-      "outputs": [
-        {
-          "internalType": "uint256",
-          "name": "",
-          "type": "uint256"
-        }
-      ],
-      "payable": false,
-      "stateMutability": "nonpayable",
-      "type": "function"
-    },
-    {
-      "constant": false,
-      "inputs": [
-        {
-          "internalType": "uint256",
-          "name": "_index",
-          "type": "uint256"
-        }
-      ],
-      "name": "withdraw",
-      "outputs": [
-        {
-          "internalType": "bool",
-          "name": "",
-          "type": "bool"
-        }
-      ],
-      "payable": true,
-      "stateMutability": "payable",
       "type": "function"
     }
   ]

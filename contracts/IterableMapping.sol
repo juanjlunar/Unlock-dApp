@@ -1,4 +1,5 @@
 pragma solidity >=0.4.0 <0.7.0;
+import './SafeMath.sol';
 
 library IterableMapping {
     struct file {
@@ -27,7 +28,7 @@ library IterableMapping {
         string memory _title,
         string memory _description,
         address payable _goalAddress
-    ) internal returns (bool) {
+    ) internal returns (uint) {
         if (self.size == 0) self.keys.length++;
 
         self.size++;
@@ -42,15 +43,15 @@ library IterableMapping {
         self.data[self.size].keyIndex = self.size;
         self.keys[self.size].key = self.size;
 
-        return false;
+        return self.data[self.size].keyIndex;
     }
 
-    function donate(file storage self, uint _index, uint _value) internal returns(uint) {
-        self.data[_index].donated = self.data[_index].donated += _value;
+    function donate(file storage self, uint _index, uint _value) internal returns(uint, bool) {
+        self.data[_index].donated = SafeMath.add(self.data[_index].donated, _value);
         if (self.data[_index].donated >= self.data[_index].goal) {
             self.data[_index].isGoalReached = true;
         }
-        return self.data[_index].donated;
+        return (self.data[_index].donated, self.data[_index].isGoalReached);
     }
 
     function resetDonated(file storage self, uint _index) internal returns(bool) {

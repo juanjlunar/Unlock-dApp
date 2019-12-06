@@ -9,16 +9,23 @@ import {
     showMetamaskInstallMessage
  } from '../redux/web3Actions';
  import { createStoreIpfsNode } from '../redux/ipfsActions';
- import { storeContractInWindowObject } from '../redux/contractActions';
+ import { getContractSingleFile, updateDonations } from '../redux/contractActions';
 
 
 export default connect(
-    null, 
+    state => {
+        return {
+            isMainAccountLoading: state.web3Reducer.isLoading,
+            mainAccount: state.web3Reducer.mainAccount,
+            error: state.web3Reducer.error
+        };
+    }, 
     {
         storeMainAccount, 
         changeMainAccount, 
-        showMetamaskInstallMessage, 
-        storeContractInWindowObject,
-        createStoreIpfsNode
+        showMetamaskInstallMessage,
+        createStoreIpfsNode,
+        getContractSingleFile,
+        updateDonations
     }
 )(Root);

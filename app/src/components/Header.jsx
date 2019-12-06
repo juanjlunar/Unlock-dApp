@@ -4,6 +4,7 @@ import './styles/Header.css';
 // importing images
 import logo from '../assets/images/logo.svg';
 import uploadIcon from '../assets/images/upload_icon.svg';
+import ReactDOM from 'react-dom';
 
 // importing components
 import Modal from './Modal';
@@ -15,7 +16,7 @@ class Header extends React.Component {
         this.showUploadFileModal = this.showUploadFileModal.bind(this);
         this.closeModal = this.closeModal.bind(this);
         this.state = {
-            showModal: true
+            showModal: false
         }
     }
     showUploadFileModal() {
