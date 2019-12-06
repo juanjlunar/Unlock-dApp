@@ -12,8 +12,22 @@
 	box-sizing: border-box;
 	list-style: none;
 }
+h1, h2, h3, h4, h5, h6, p, input, a, span, textarea {
+	letter-spacing: 0.6px;
+}
+label {
+	letter-spacing: 0.7px;
+}
 a {
 	text-decoration: none;
+}
+html, #root, body {
+	height: 100%;
+}
+#root {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
 }
 body {
 	margin: 0;
@@ -22,6 +36,11 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	background: var(--black);
 	font-size: 16px;
+	line-height: 1.3;
+}
+fieldset, input {
+	border: none;
+	box-shadow: none;
 }
 
 code {
@@ -33,8 +52,20 @@ code {
 	--orange: #e33d38;
 	--background: rgba(255, 255, 255, 0.1);
 }
-img {
+img, svg {
 	width: 100%;
+}
+.btn {
+	border: none;
+	box-shadow: none;
+	outline: transparent;
+	color: #FFF;
+	background: var(--orange);
+	padding: 0.7em 1.2em;
+	border-radius: 3px;
+	letter-spacing: 0.7px;
+	cursor: pointer;
+	font-weight: 700;
 }
 .clickeable {
 	cursor: pointer;
@@ -81,4 +112,29 @@ img {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+}
+.vertical-separator {
+	padding: 2em 0;
+}
+.metamast-log-in-title, .metamask-error, .fetching-files {
+	text-align: center;
+	color: #FFF;
+}
+.full-height {
+	height: 100%;
+}
+.flex-1 {
+	flex: 1;
+}
+.text-center {
+	text-align: center;
+}
+.empty-collec {
+	color: #FFF;
+}
+.empty-collec > p:first-child {
+	padding: 1em 0;
+}
+.row-space-between {
+	justify-content: space-between;
 }

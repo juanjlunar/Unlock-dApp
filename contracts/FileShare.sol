@@ -6,6 +6,8 @@ import './Utils.sol';
 contract FileShare {
     IterableMapping.file filesData;
     address owner = msg.sender;
+    event InsertedFileEvent(uint id);
+    event DonateEvent(uint id, uint donated);
 
     modifier doesIndexExist(uint _index) {
         require(
@@ -74,7 +76,8 @@ contract FileShare {
         )
         returns(uint)
     {
-        IterableMapping.insert(filesData, _goal, _fileLink, _title, _description, msg.sender);
+        (uint id) = IterableMapping.insert(filesData, _goal, _fileLink, _title, _description, msg.sender);
+        emit InsertedFileEvent(id);
         return filesData.size;
     }
 
@@ -88,15 +91,13 @@ contract FileShare {
             uint donated,
             uint dateCreated,
         ) = IterableMapping.get(filesData, _index);
-        return string(abi.encodePacked(
-            '"',
-            Utils.getFileObject(donated >= goal ? fileLink : 'File hidden until goal is reached as minimum.', goal, title, description, donated, dateCreated),
-            '"'
-        ));
+        return string(
+            abi.encodePacked(Utils.getFileObject(donated >= goal ? fileLink : 'Hidden', goal, title, description, donated, dateCreated, _index))
+        );
     }
 
     function getAllFilesInfo() public view returns(string memory content) {
-        content = '"[';
+        content = '[';
         for (uint i = IterableMapping.firstIndex(filesData);
         IterableMapping.isValid(filesData, i);
         i = IterableMapping.nextIndex(filesData, i)) {
@@ -113,20 +114,24 @@ contract FileShare {
 
             content = string(abi.encodePacked(
                 content,
-                Utils.getFileObject(donated >= goal ? fileLink : 'File hidden until goal is reached as minimum.',
+                Utils.getFileObject(donated >= goal ? fileLink : 'Hidden',
                 goal,
                 title,
                 description,
                 donated,
-                dateCreated),
+                dateCreated,
+                i),
                 (i == filesData.size) ? '' : ', '
             ));
         }
-        content = string(abi.encodePacked(content, ']"'));
+        content = string(abi.encodePacked(content, ']'));
     }
 
     function donate(uint _index) public payable donateRules(_index) doesIndexExist(_index) returns(uint) {
-        return IterableMapping.donate(filesData, _index, msg.value);
+        (uint donated, bool isGoalReached) = IterableMapping.donate(filesData, _index, msg.value);
+        if (isGoalReached)
+            emit DonateEvent(_index, donated);
+        return donated;
     }
 
     function withdraw(uint _index) public payable

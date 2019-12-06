@@ -48,11 +48,11 @@ class Modal extends React.Component {
         this.modalRef.removeEventListener('touchstart', this.avoidIosOverflowScroll);
         if (document.body.classList.contains('modal-opened')) document.body.classList.remove('modal-opened');
         if (this.closeModalTimeout) clearTimeout(this.closeModalTimeout);
+
         if (window.__modals && window.__modals.length === 1) {
             delete window.__modals;
             delete window.__modalZIndex;
         } else {
-            window.__firstModal -= 1;
             this.removeModalFromWindowObject();
         }
         this.removeGLobalCloseModal();
@@ -122,9 +122,9 @@ class Modal extends React.Component {
                 if (this.modalContentRef) this.modalContentRef.classList.add('hide');
                 if (this.closeModalTimeout) clearTimeout(this.closeModalTimeout);
                 this.closeModalTimeout = window.setTimeout(() => {
-                    window.__firstModal -= 1;
+                    // window.__firstModal -= 1;
                     clearTimeout(this.closeModalTimeout);
-                    this.removeModalFromWindowObject();
+                    // this.removeModalFromWindowObject();
                     this.props.closeModal();
                     resolve(true);
                 }, 100);
@@ -134,6 +134,7 @@ class Modal extends React.Component {
     removeModalFromWindowObject() {
         if (window.__modals) {
             window.__modals.pop();
+            window.__firstModal -= 1;
             window.__modalZIndex -= 1;
             if (window.__modals.length === 0) window.__modals = null;
         }

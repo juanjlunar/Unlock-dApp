@@ -1,0 +1,27 @@
+.text-input-container > input, .text-input-container textarea {
+    padding: 0.6em 1.2em;
+    background: rgba(255,255,255, 0.1);
+    border-radius: 4px;
+    font-size: 0.9em;
+    color: #FFF;
+    font-family: MonLight;
+    font-weight: 900;
+    outline: transparent;
+    width: 100%;
+    border: none;
+}
+.text-input-container textarea {
+    resize: none;
+    min-height: 150px;
+}
+.text-input-container input {
+    max-width: 500px;
+}
+.text-input-container label {
+    color: #FFF;
+    font-size: 0.9em;
+    font-weight: 700;
+}
+.text-input-container > div {
+    padding: 0.4em 0;
+}

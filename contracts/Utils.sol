@@ -8,15 +8,17 @@ library Utils {
         string memory _title,
         string memory _description,
         uint _donated,
-        uint _dateCreated
+        uint _dateCreated,
+        uint _index
     ) internal pure returns(string memory content) {
         content = string(abi.encodePacked(
-            '{"fileLink": ', '"', _fileLink, '"',
-            ', "goal": ', '"', toString(_goal), '"',
-            ', "title": ', '"', _title, '"',
-            ', "description": ', '"', _description, '"',
-            ', "donated": ', '"', toString(_donated), '"',
-            ', "dateCreated": ', '"', toString(_dateCreated), '"',
+            '{\"fileLink\": ', '\"', _fileLink, '\"',
+            ', \"goal\": ', '\"', toString(_goal), '\"',
+            ', \"title\": ', '\"', _title, '\"',
+            ', \"description\": ', '\"', _description, '\"',
+            ', \"donated\": ', '\"', toString(_donated), '\"',
+            ', \"dateCreated\": ', '\"', toString(_dateCreated), '\"',
+            ', \"id\": ', '\"', toString(_index), '\"',
             '}')
         );
     }

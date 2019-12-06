@@ -1,0 +1,36 @@
+.single-file {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    padding: 0.8em 0;
+    color: #FFF;
+    letter-spacing: 0.6px;
+    margin: 0.5em 0;
+    cursor: pointer;
+}
+.single-file:first-child {
+    border-bottom: 1px solid var(--light-gray);
+}
+.single-file:not(:first-child) {
+    background: rgba(255,255,255, 0.1);
+    border-radius: 3px;
+}
+.file-detail, .table-th {
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: var(--columns-width);
+    padding: 0 1em;
+    white-space: nowrap;
+    text-align: center;
+    color: var(--dark-gray);
+}
+.table-th {
+    font-size: 0.90em;
+}
+.file-detail {
+    font-size: 0.85em;
+}
+.file-detail a {
+    font-size: 1em;
+}
